@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+
+// const root = document.getElementById('root');
+// ReactDOM.render(
+// 	<h1>Hello Goaat !</h1>,
+// 	document.getElementById('root')
+// );
+function Entete() {
+	return <h2 className="style1">Entete</h2>;
+}
+function Corps() {
+	return <h2 className="style2">Corps</h2>;
+}
+
+class Footer extends React.Component {
+	render() {
+		return <div className="style3">Footer </div>;
+	}
+}
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<React.Fragment>
+			
+      <Entete/>
+      <Corps/>
+      <Footer/>
+		</React.Fragment>
+	);
 }
 
 export default App;
