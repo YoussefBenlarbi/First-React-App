@@ -1,32 +1,21 @@
 .style1 {
     list-style-type:disc ;
     border: 1px solid black;
-    background-color: rgb(153, 224, 60);
+    background-color: rgb(174, 242, 85);
     color: rgb(49, 40, 40);
     border-radius: 5px;
 }
 .style2 {
     list-style-type:disc ;
     border: 1px solid black;
-    background-color: rgb(212, 146, 48);
+    background-color: rgb(231, 172, 84);
     color: rgb(49, 40, 40);
     border-radius: 5px;
     margin-bottom: 10px;
     margin-right: 10px;
 }
 
-.style3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #000;
-    width: 100%;
-    height: 300px;
 
-    color: white;
-    font-size: 25px;
-    background-color: rgb(218, 119, 136);
-}
 h2::selection {
     color: green;
 }
