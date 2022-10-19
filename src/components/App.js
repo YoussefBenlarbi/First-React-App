@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Stagiaire from './Stagiaire';
 
 // const root = document.getElementById('root');
 // ReactDOM.render(
@@ -19,15 +20,16 @@ import React from 'react';
 // 	}
 // }
 
-
+// component
+// {/* <Entete/>
+//       <Corps/>
+//       <Footer/> */}
 
 function App() {
 	return (
 		<React.Fragment>
-			
-      {/* <Entete/>
-      <Corps/>
-      <Footer/> */}
+		<Stagiaire/>	
+      
 		</React.Fragment>
 	);
 }
