@@ -1,4 +1,5 @@
 import './../Style/stagiaire.css' ;
+import Module  from './module';
 function Stagiaire({id,nom,prenom,modules}) {
 	// const id = props.id ;
 	// const nom = props.nom ;
@@ -18,8 +19,8 @@ function Stagiaire({id,nom,prenom,modules}) {
 					{/* {modules.map(function (element) {
 						return <li>{element}</li>;
 					})} */}
-					{modules.map((element, index) => (
-						<li key={index}>{element} </li>
+					{modules.map((element ,index) => (
+						< Module key={index} nomModule={element}/>
 					))}
 				</ul>
 			</li>

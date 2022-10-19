@@ -1,4 +1,4 @@
-
+import './../Style/App.css'
 import React from 'react';
 import Stagiaire from './Stagiaire';
 
@@ -26,15 +26,26 @@ import Stagiaire from './Stagiaire';
 //       <Footer/> */}
 
 function App() {
-	const modules1 = ['POO', 'React', 'Laravel'] ;
-	const modules2 = ['SQL', 'Back End' , 'Laravel'] ;
-	const modules3 = ['POO', 'Laravel','Mysql'] ; 
+	const listeStagiaire= [
+		{id:1 ,prenom:"Zouhhair" , nom:"Respo" ,modules:['POO', 'React', 'Laravel']},
+		{id:2 ,prenom:"HAMID" , nom:"BLED",modules:['SQL', 'Back End' , 'Laravel']},
+		{id:3 ,prenom:"HAMID" , nom:"BLED",modules:['POO', 'Laravel','Mysql']}
+	]
+	// const modules1 = ['POO', 'React', 'Laravel'] ;
+	// const modules2 = ['SQL', 'Back End' , 'Laravel'] ;
+	// const modules3 = ['POO', 'Laravel','Mysql'] ; 
 	return (
-		<React.Fragment>
-		<Stagiaire id={1} prenom="Zouhhair"  nom="Respo" modules={modules1} />	
-		<Stagiaire id={2} prenom="HAMID"  nom="BLED" modules={modules2}/>	
-		<Stagiaire id={3} prenom="KHALID"  nom="CHEIKH" modules={modules3}/>	
-		</React.Fragment>
+		<ul >
+			{listeStagiaire.map((element,index)=>
+			<li className='UlStyle' key={index}>
+				<Stagiaire 
+				id={element.id}
+				nom={element.nom}
+				prenom={element.prenom}
+				modules={element.modules}/>
+			</li>)}
+			
+		</ul>
 	);
 }
 
