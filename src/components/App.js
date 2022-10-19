@@ -56,6 +56,7 @@ function App() {
 				{ nomModule: 'Back End', moyenne: 19 },
 				{ nomModule: 'Laravel', moyenne: 17 },
 			],
+			
 		},
 	];
 	// const modules1 = ['POO', 'React', 'Laravel'] ;
@@ -70,6 +71,7 @@ function App() {
 						nom={element.nom}
 						prenom={element.prenom}
 						modules={element.modules}
+						
 						
 					/>
 				</li>
