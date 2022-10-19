@@ -1,22 +1,18 @@
-function Stagiaire() {
-	const id = 1;
-	const nom = 'Errahmani';
-	const prenom = 'maryam';
-	const modules = ['POO', 'React', 'Laravel', 'SQL', 'Back End'];
+function Stagiaire(props) {
 	return (
 		<ul>
-			<li>ID : {id}</li>
-			<li>Nom : {nom.toUpperCase()}</li>
-			<li>Prenom : {prenom.toUpperCase()}</li>
+			<li>ID : {props.id}</li>
+			<li>Nom : {props.nom.toUpperCase()}</li>
+			<li>Prenom : {props.prenom.toUpperCase()}</li>
 			<li>
 				<h3>Listes Modules : </h3>
 				<ul>
 					{/* {modules.map(function (element) {
 						return <li>{element}</li>;
 					})} */}
-					{modules.map((element) => 
-						<li>{element}</li>
-					)}
+					{props.modules.map((element, index) => (
+						<li key={index}>{element} </li>
+					))}
 				</ul>
 			</li>
 		</ul>

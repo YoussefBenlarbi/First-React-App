@@ -26,12 +26,14 @@ import Stagiaire from './Stagiaire';
 //       <Footer/> */}
 
 function App() {
+	const modules1 = ['POO', 'React', 'Laravel'] ;
+	const modules2 = ['SQL', 'Back End' , 'Laravel'] ;
+	const modules3 = ['POO', 'Laravel','Mysql'] ;
 	return (
 		<React.Fragment>
-		<Stagiaire/>	
-		<Stagiaire/>	
-		<Stagiaire/>	
-      
+		<Stagiaire id="1" prenom="Zouhhair"  nom="respo" modules={modules1} />	
+		<Stagiaire id="2" prenom="HAMID"  nom="BLED" modules={modules2}/>	
+		<Stagiaire id="3" prenom="KHALID"  nom="CHEIKH" modules={modules3}/>	
 		</React.Fragment>
 	);
 }
