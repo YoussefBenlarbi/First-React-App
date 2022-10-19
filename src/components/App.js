@@ -29,6 +29,8 @@ function App() {
 	return (
 		<React.Fragment>
 		<Stagiaire/>	
+		<Stagiaire/>	
+		<Stagiaire/>	
       
 		</React.Fragment>
 	);
