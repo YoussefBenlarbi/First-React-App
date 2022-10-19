@@ -1,8 +1,11 @@
 function Stagiaire(props) {
-	const id = props.id ;
-	const nom = props.nom ;
-	const prenom = props.prenom ;
-	const modules = props.modules ;
+	// const id = props.id ;
+	// const nom = props.nom ;
+	// const prenom = props.prenom ;
+	// const modules = props.modules ;
+
+	// desruction Object :
+	const {id,nom,prenom,modules} = props ; 
 	return (
 		<ul>
 			<li>ID : {id}</li>

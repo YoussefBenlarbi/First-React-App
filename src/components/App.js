@@ -31,9 +31,9 @@ function App() {
 	const modules3 = ['POO', 'Laravel','Mysql'] ; 
 	return (
 		<React.Fragment>
-		<Stagiaire id="1" prenom="Zouhhair"  nom="Respo" modules={modules1} />	
-		<Stagiaire id="2" prenom="HAMID"  nom="BLED" modules={modules2}/>	
-		<Stagiaire id="3" prenom="KHALID"  nom="CHEIKH" modules={modules3}/>	
+		<Stagiaire id={1} prenom="Zouhhair"  nom="Respo" modules={modules1} />	
+		<Stagiaire id={2} prenom="HAMID"  nom="BLED" modules={modules2}/>	
+		<Stagiaire id={3} prenom="KHALID"  nom="CHEIKH" modules={modules3}/>	
 		</React.Fragment>
 	);
 }
