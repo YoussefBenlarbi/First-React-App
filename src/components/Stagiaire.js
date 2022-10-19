@@ -1,16 +1,20 @@
 function Stagiaire(props) {
+	const id = props.id ;
+	const nom = props.nom ;
+	const prenom = props.prenom ;
+	const modules = props.modules ;
 	return (
 		<ul>
-			<li>ID : {props.id}</li>
-			<li>Nom : {props.nom.toUpperCase()}</li>
-			<li>Prenom : {props.prenom.toUpperCase()}</li>
+			<li>ID : {id}</li>
+			<li>Nom : {nom.toUpperCase()}</li>
+			<li>Prenom : {prenom.toUpperCase()}</li>
 			<li>
 				<h3>Listes Modules : </h3>
 				<ul>
 					{/* {modules.map(function (element) {
 						return <li>{element}</li>;
 					})} */}
-					{props.modules.map((element, index) => (
+					{modules.map((element, index) => (
 						<li key={index}>{element} </li>
 					))}
 				</ul>
