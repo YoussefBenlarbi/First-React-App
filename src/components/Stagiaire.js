@@ -13,6 +13,7 @@ function Stagiaire({id,nom,prenom,modules}) {
 			<li>ID : {id}</li>
 			<li>Nom : {nom.toUpperCase()}</li>
 			<li>Prenom : {prenom.toUpperCase()}</li>
+			
 			<li>
 				<h3>Listes Modules : </h3>
 				<ul className="style2">
@@ -20,9 +21,10 @@ function Stagiaire({id,nom,prenom,modules}) {
 						return <li>{element}</li>;
 					})} */}
 					{modules.map((element ,index) => (
-						< Module key={index} nomModule={element}/>
+						< Module key={index} nomModule={element.nomModule} moyenne={element.moyenne}/>
 					))}
 				</ul>
+				
 			</li>
 		</ul>
 	);

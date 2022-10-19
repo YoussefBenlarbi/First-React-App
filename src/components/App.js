@@ -1,4 +1,4 @@
-import './../Style/App.css'
+import './../Style/App.css';
 import React from 'react';
 import Stagiaire from './Stagiaire';
 
@@ -26,25 +26,54 @@ import Stagiaire from './Stagiaire';
 //       <Footer/> */}
 
 function App() {
-	const listeStagiaire= [
-		{id:1 ,prenom:"Zouhhair" , nom:"Respo" ,modules:['POO', 'React', 'Laravel']},
-		{id:2 ,prenom:"HAMID" , nom:"BLED",modules:['SQL', 'Back End' , 'Laravel']},
-		{id:3 ,prenom:"HAMID" , nom:"BLED",modules:['POO', 'Laravel','Mysql']}
-	]
+	const listeStagiaire = [
+		{
+			id: 1,
+			prenom: 'Zouhhair',
+			nom: 'Respo',
+			modules: [
+				{ nomModule: 'POO', moyenne: 14 },
+				{ nomModule: 'React', moyenne: 17 },
+				{ nomModule: 'Laravel', moyenne: 18 },
+			],
+		},
+		{
+			id: 2,
+			prenom: 'HAMID',
+			nom: 'BLED',
+			modules: [
+				{ nomModule: 'SQL', moyenne: 15 },
+				{ nomModule: 'Back End', moyenne: 19 },
+				{ nomModule: 'Laravel', moyenne: 11 },
+			],
+		},
+		{
+			id: 3,
+			prenom: 'HAMID',
+			nom: 'BLED',
+			modules: [
+				{ nomModule: 'SQL', moyenne: 20 },
+				{ nomModule: 'Back End', moyenne: 19 },
+				{ nomModule: 'Laravel', moyenne: 17 },
+			],
+		},
+	];
 	// const modules1 = ['POO', 'React', 'Laravel'] ;
 	// const modules2 = ['SQL', 'Back End' , 'Laravel'] ;
-	// const modules3 = ['POO', 'Laravel','Mysql'] ; 
+	// const modules3 = ['POO', 'Laravel','Mysql'] ;
 	return (
-		<ul >
-			{listeStagiaire.map((element,index)=>
-			<li className='UlStyle' key={index}>
-				<Stagiaire 
-				id={element.id}
-				nom={element.nom}
-				prenom={element.prenom}
-				modules={element.modules}/>
-			</li>)}
-			
+		<ul>
+			{listeStagiaire.map((element, index) => (
+				<li className="UlStyle" key={index}>
+					<Stagiaire
+						id={element.id}
+						nom={element.nom}
+						prenom={element.prenom}
+						modules={element.modules}
+						
+					/>
+				</li>
+			))}
 		</ul>
 	);
 }
