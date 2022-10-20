@@ -20,13 +20,13 @@ function Stagiaire({ id, nom, prenom, modules }) {
 	// 	  return n ;
 	// }
 	// console.log(test(newArr)) ;
-	
+
 	const modulesMoyenne = modules
-		.map((element) => (element.moyenne))
+		.map((element) => element.moyenne)
 		.reduce(function (total, n) {
-			return (total + n) ;
-		}, 0);  
-		// console.log(modules.length);
+			return total + n;
+		}, 0);
+	// console.log(modules.length);
 	console.log(modulesMoyenne);
 	return (
 		<ul className="style1">
@@ -45,12 +45,11 @@ function Stagiaire({ id, nom, prenom, modules }) {
 							key={index}
 							nomModule={element.nomModule}
 							moyenne={element.moyenne}
-							
 						/>
 					))}
 				</ul>
 			</li>
-			<li>moyenne de module : {modulesMoyenne/modules.length}</li>
+			<li>moyenne de module : {modulesMoyenne / modules.length}</li>
 		</ul>
 	);
 }
