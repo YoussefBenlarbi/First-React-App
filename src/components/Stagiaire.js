@@ -8,11 +8,24 @@ function Stagiaire({ id, nom, prenom, modules }) {
 
 	// desruction Object :
 	// const {id,nom,prenom,modules} = props ;
+
+	// const newArr = modules.map();
+	// function test(Arr){
+	// 	let n ;
+	// 	for (let i = 0; i < Arr.length; i++) {
+	// 		let total = Arr.moyenne[i] *  Arr.coe[i] ;
+	// 		n += total+ n ;
+
+	// 	  }
+	// 	  return n ;
+	// }
+	// console.log(test(newArr)) ;
+	
 	const modulesMoyenne = modules
-		.map((element) => element.moyenne)
+		.map((element) => (element.moyenne))
 		.reduce(function (total, n) {
 			return (total + n) ;
-		}, 0);
+		}, 0);  
 		// console.log(modules.length);
 	console.log(modulesMoyenne);
 	return (
