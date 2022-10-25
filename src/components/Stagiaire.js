@@ -20,12 +20,18 @@ function Stagiaire({ id, nom, prenom, modules }) {
 	// 	  return n ;
 	// }
 	// console.log(test(newArr)) ;
-
+// Somme de moyenne * coeffician 
 	const modulesMoyenne = modules
-		.map((element) => element.moyenne)
+		.map((element) => element.moyenne * element.coe)
 		.reduce(function (total, n) {
 			return total + n;
 		}, 0);
+		// Somme de coeffician 
+	const Sommeceo = modules
+	.map((element) =>  element.coe)
+	.reduce(function (total2, n) {
+		return total2 + n;
+	}, 0);
 	// console.log(modules.length);
 	console.log(modulesMoyenne);
 	return (
@@ -45,11 +51,13 @@ function Stagiaire({ id, nom, prenom, modules }) {
 							key={index}
 							nomModule={element.nomModule}
 							moyenne={element.moyenne}
+							coe ={element.coe}
 						/>
 					))}
 				</ul>
 			</li>
-			<li>moyenne de module : {modulesMoyenne / modules.length}</li>
+			
+			<li>moyenne de module : {modulesMoyenne / Sommeceo}</li>
 		</ul>
 	);
 }
