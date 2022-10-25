@@ -1,7 +1,7 @@
 function Module({nomModule,moyenne,coe}){
     // const {nomModule} = props ;
     return (
-        <li >{nomModule} {" : "} {moyenne}{"  - coe : "} {coe} </li>
+        <li >{nomModule} {" : "} {moyenne}{" / Coefficient: "} {coe} </li>
     )
 }
 
