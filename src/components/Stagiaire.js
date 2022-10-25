@@ -24,7 +24,7 @@ function Stagiaire({ id, nom, prenom, modules }) {
 			return total2 + n;
 		}, 0);
 	// console.log(modules.length);
-	console.log(modulesMoyenne);
+	// console.log(modulesMoyenne);
 	return (
 		<ul className="style1">
 			<li>ID : {id}</li>

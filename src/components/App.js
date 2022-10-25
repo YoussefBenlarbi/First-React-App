@@ -71,8 +71,6 @@ function App() {
 						nom={element.nom}
 						prenom={element.prenom}
 						modules={element.modules}
-					
-						
 					/>
 				</li>
 			))}
