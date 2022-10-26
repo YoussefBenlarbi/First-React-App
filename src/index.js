@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import Presentation from './components/presentation.js';
-import Salutation from './components/presentation.js';
-import App from './components/App.js';
-import Voiture from './components/Voiture.js';
+// import Salutation from './components/presentation.js';
+// import App from './components/App.js';
+// import Voiture from './components/Voiture.js';
 import State from "./components/ObjectState"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
