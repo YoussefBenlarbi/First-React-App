@@ -7,7 +7,7 @@ export const listeStagiaire = [
 		id: 1,
 		prenom: 'Zouhair',
 		nom: 'Respo',
-		photo: photo1,
+		photo: photo3,
 		modules: [
 			{ nomModule: 'POO', moyenne: 14, coe: 2 },
 			{ nomModule: 'React', moyenne: 17, coe: 2 },
@@ -29,7 +29,7 @@ export const listeStagiaire = [
 		id: 3,
 		prenom: 'HAMID',
 		nom: 'BLED',
-		photo: photo3,
+		photo: photo1,
 		modules: [
 			{ nomModule: 'SQL', moyenne: 20, coe: 2 },
 			{ nomModule: 'Back End', moyenne: 19, coe: 2 },

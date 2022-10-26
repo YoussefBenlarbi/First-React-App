@@ -13,6 +13,9 @@ function Stagiaire({ id, nom, prenom,photo, modules }) {
 	// const newArr = modules.map();
 
 	// Somme de moyenne * coeffician
+	function contacter(){
+		alert(`Bonjour ${nom} ${prenom}`)
+	}
 	const modulesMoyenne = modules
 		.map((element) => element.moyenne * element.coe)
 		.reduce(function (total, n) {
@@ -27,6 +30,7 @@ function Stagiaire({ id, nom, prenom,photo, modules }) {
 	// console.log(modules.length);
 	// console.log(modulesMoyenne);
 	return (
+		<div className="style0">
 		<ul className="style1">
 			<li>ID : {id}</li>
 			<li>Nom : {nom.toUpperCase()}</li>
@@ -44,7 +48,6 @@ function Stagiaire({ id, nom, prenom,photo, modules }) {
 							key={index}
 							nomModule={element.nomModule}
 							moyenne={element.moyenne}
-							photo={element.photo}
 							coe={element.coe}
 						/>
 					))}
@@ -52,7 +55,9 @@ function Stagiaire({ id, nom, prenom,photo, modules }) {
 			</li>
 
 			<li>Moyenne general : {Math.round(modulesMoyenne / Sommeceo)}</li>
+			
 		</ul>
+		<input type="button" onClick={()=>contacter()} id="btn" value="Contacter" /></div>
 	);
 }
 
