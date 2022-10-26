@@ -21,3 +21,8 @@
 h2::selection {
     color: green;
 }
+.photoProfil{
+    width: 250px;
+    height: 250px;
+    vertical-align:middle;
+}

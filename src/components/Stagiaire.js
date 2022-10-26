@@ -1,6 +1,7 @@
 import './../Style/stagiaire.css';
 import Module from './module';
-function Stagiaire({ id, nom, prenom, modules }) {
+
+function Stagiaire({ id, nom, prenom,photo, modules }) {
 	// const id = props.id ;
 	// const nom = props.nom ;
 	// const prenom = props.prenom ;
@@ -30,6 +31,7 @@ function Stagiaire({ id, nom, prenom, modules }) {
 			<li>ID : {id}</li>
 			<li>Nom : {nom.toUpperCase()}</li>
 			<li>Prenom : {prenom.toUpperCase()}</li>
+			<li >photo : <img className='photoProfil' src={photo} alt="profil" /></li>
 
 			<li>
 				<h3>Listes Modules : </h3>
@@ -42,13 +44,14 @@ function Stagiaire({ id, nom, prenom, modules }) {
 							key={index}
 							nomModule={element.nomModule}
 							moyenne={element.moyenne}
+							photo={element.photo}
 							coe={element.coe}
 						/>
 					))}
 				</ul>
 			</li>
 
-			<li>Moyenne : {Math.round(modulesMoyenne / Sommeceo)}</li>
+			<li>Moyenne general : {Math.round(modulesMoyenne / Sommeceo)}</li>
 		</ul>
 	);
 }
