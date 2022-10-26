@@ -35,7 +35,7 @@ function Stagiaire({ id, nom, prenom,photo, modules }) {
 			<li>ID : {id}</li>
 			<li>Nom : {nom.toUpperCase()}</li>
 			<li>Prenom : {prenom.toUpperCase()}</li>
-			<li >photo : <img className='photoProfil' src={photo} alt="profil" /></li>
+			<li>Photo : <img className='photoProfil' src={photo} alt="profil" /></li>
 
 			<li>
 				<h3>Listes Modules : </h3>
@@ -57,7 +57,7 @@ function Stagiaire({ id, nom, prenom,photo, modules }) {
 			<li>Moyenne general : {Math.round(modulesMoyenne / Sommeceo)}</li>
 			
 		</ul>
-		<input type="button" onClick={()=>contacter()} id="btn" value="Contacter" /></div>
+		<button  id="btn" onClick={()=>contacter() }  > Contacter</button></div>
 	);
 }
 
