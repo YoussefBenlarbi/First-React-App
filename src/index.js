@@ -9,7 +9,7 @@ import State from "./components/ObjectState"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // const displomes = ["Bac , Licence , Master"];
 // const specialite={id:1,nomSpecialite:"Informatique"} ;
-const etat = false;
+// const etat = false;
 root.render(
 	(<React.StrictMode>
      <State
