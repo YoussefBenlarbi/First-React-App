@@ -32,9 +32,9 @@ function App() {
 			prenom: 'Zouhhair',
 			nom: 'Respo',
 			modules: [
-				{ nomModule: 'POO', moyenne: 14 , coe : 2},
-				{ nomModule: 'React', moyenne: 17, coe : 2 },
-				{ nomModule: 'Laravel', moyenne: 18, coe : 3 },
+				{ nomModule: 'POO', moyenne: 14, coe: 2 },
+				{ nomModule: 'React', moyenne: 17, coe: 2 },
+				{ nomModule: 'Laravel', moyenne: 18, coe: 3 },
 			],
 		},
 		{
@@ -42,9 +42,9 @@ function App() {
 			prenom: 'HAMID',
 			nom: 'BLED',
 			modules: [
-				{ nomModule: 'SQL', moyenne: 15 , coe : 2 },
-				{ nomModule: 'Back End', moyenne: 19, coe : 2 },
-				{ nomModule: 'Laravel', moyenne: 11, coe : 3 },
+				{ nomModule: 'SQL', moyenne: 15, coe: 2 },
+				{ nomModule: 'Back End', moyenne: 19, coe: 2 },
+				{ nomModule: 'Laravel', moyenne: 11, coe: 3 },
 			],
 		},
 		{
@@ -52,11 +52,10 @@ function App() {
 			prenom: 'HAMID',
 			nom: 'BLED',
 			modules: [
-				{ nomModule: 'SQL', moyenne: 20 , coe : 2 },
-				{ nomModule: 'Back End', moyenne: 19 , coe : 2},
-				{ nomModule: 'Laravel', moyenne: 17 , coe : 3},
+				{ nomModule: 'SQL', moyenne: 20, coe: 2 },
+				{ nomModule: 'Back End', moyenne: 19, coe: 2 },
+				{ nomModule: 'Laravel', moyenne: 17, coe: 3 },
 			],
-			
 		},
 	];
 	// const modules1 = ['POO', 'React', 'Laravel'] ;

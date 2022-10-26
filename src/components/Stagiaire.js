@@ -48,7 +48,7 @@ function Stagiaire({ id, nom, prenom, modules }) {
 				</ul>
 			</li>
 
-			<li>moyenne de module : {Math.round(modulesMoyenne / Sommeceo)}</li>
+			<li>Moyenne : {Math.round(modulesMoyenne / Sommeceo)}</li>
 		</ul>
 	);
 }
